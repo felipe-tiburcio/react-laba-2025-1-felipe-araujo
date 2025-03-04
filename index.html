@@ -4,11 +4,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homeworks</title>
+  <title>Portfolio Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <header>
+    <img src="./assets/icons/toggle-light-button.png" alt="Button to toggle light and dark mode">
+    <div class="profile">
+      <img src="./assets/images/victor-photo.png" alt="Profile Picture" class="profile-picture">
+      <div class="profile-info">
+        <h1>Victor Alvarado</h1>
+        <p class="job-title">Software Engineer</p>
+        <nav class="social-icons">
+          <a href="https://github.com/vito8916" target="_blank"><img src="./assets/icons/github.png" alt="GitHub"></a>
+          <a href="https://x.com/Ar7ois" target="_blank"><img src="./assets/icons/twitter-logo.png" alt="Twitter"></a>
+          <a href="https://www.linkedin.com/in/victorokada/" target="_blank"><img src="./assets/icons/linkedin-logo.png"
+              alt="LinkedIn"></a>
+          <a href="https://www.youtube.com/watch?v=sI7pwwUbyAw" target="_blank"><img src="./assets/icons/youtube.png"
+              alt="Youtube"></a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
+  <main class="achievements">
+    <div class="achievement">
+      <h2>7</h2>
+      <p>Years of work experience</p>
+    </div>
+    <div class="achievement">
+      <h2>50+</h2>
+      <p>Completed projects</p>
+    </div>
+    <div class="achievement">
+      <h2>20+</h2>
+      <p>Satisfied customers</p>
+    </div>
+  </main>
+
+  <div class="actions">
+    <a class="download-cv" href="./assets/docs/cv-victor-alvarado.pdf" download>Download CV <img
+        src="./assets/icons/downArrow.svg" alt="Down Arrow Icon"></a>
+    <a class="contact-me" href="https://wa.me/5579996444681?text=Hi,Victor!" target="_blank">Contact Me</a>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active">Portfolio</button>
+    <button class="tab">Skills</button>
+  </div>
+
+  <div class="portfolio">
+    <div class="project">
+      <img src="./assets/images/01-investments.png" alt="Investments-Project">
+    </div>
+    <div class="project">
+      <img src="./assets/images/02-sam.png" alt="Sam's-Project">
+    </div>
+    <div class="project">
+      <img src="./assets/images/03-frames.png" alt="Arts-Project">
+    </div>
+    <div class="project">
+      <img src="./assets/images/04-friday-dinner.png" alt="Dinner-Project">
+    </div>
+    <div class="project">
+      <img src="./assets/images/05-phone.png" alt="Phone-Project">
+    </div>
+    <div class="project">
+      <img src="./assets/images/06-food.png" alt="Food-Project">
+    </div>
+  </div>
+  <footer>
+    <p>&copy; Victor Alvarado, 2025. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
