@@ -9,17 +9,27 @@ body {
   background-color: #e9ebec;
   color: #333;
   text-align: center;
-  margin: 0;
-  padding: 0;
+  transition: background-color 0.3s ease;
 }
 
-header {
+.header {
   padding: 20px;
 }
 
-header > img {
+.header__toggle-button {
   width: 80px;
   cursor: pointer;
+  margin-bottom: 20px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.header__toggle-button:hover {
+  opacity: 1;
+}
+
+.header__toggle-button-path {
+  transition: fill 0.5s ease, stroke 0.5s ease;
 }
 
 .profile {
@@ -31,23 +41,22 @@ header > img {
   gap: 40px;
 }
 
-.profile-picture {
+.profile__picture {
   border-radius: 50%;
-  border: 5px solid #fff;
   width: 192px;
   height: 192px;
 }
 
-.profile-info h1 {
+.profile__info-title {
   margin: 10px 0;
   font-size: 46px;
 }
 
-.job-title {
+.profile__job-title {
   font-size: 22px;
-  color: gray;
+  color: #575757;
   position: relative;
-  left: -65px;
+  left: -78px;
   margin-bottom: 10px;
 }
 
@@ -56,9 +65,17 @@ header > img {
   gap: 26px;
 }
 
-.social-icons img {
+.social-icons__svg-path {
+  pointer-events: bounding-box;
   width: 36px;
   height: 36px;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.social-icons__svg-path:hover {
+  opacity: 1;
+  transform: scale(1.05);
 }
 
 .achievements {
@@ -70,12 +87,12 @@ header > img {
   font-size: 24px;
 }
 
-.achievement h2 {
+.achievement__title {
   font-size: 22px;
   color: #3a3a3a;
 }
 
-.achievement p {
+.achievement__description {
   color: #575757;
   font-size: 22px;
 }
@@ -89,7 +106,7 @@ header > img {
   gap: 38px;
 }
 
-.actions a {
+.actions__link {
   text-decoration: none;
   width: 290px;
   font-size: 22px;
@@ -100,18 +117,28 @@ header > img {
   align-items: center;
 }
 
-.download-cv {
+.actions__link-download {
   background-color: #fbd144;
   color: #333;
+  transition: box-shadow 0.3s ease;
 }
 
-.download-cv > img {
+.actions__link-download:hover {
+  box-shadow: 2px 2px 5px gray;
+}
+
+.actions__link-download-icon {
   margin-left: 10px;
 }
 
-.contact-me {
+.actions__link-contact {
   background-color: #ffffff;
   color: #333;
+  transition: box-shadow 0.3s ease;
+}
+
+.actions__link-contact:hover {
+  box-shadow: 2px 2px 5px gray;
 }
 
 .tabs {
@@ -120,27 +147,28 @@ header > img {
   justify-content: center;
   gap: 10px;
   margin: 20px auto;
-  background-color: #FFF;
+  background-color: #fff;
   padding: 10px;
   border-radius: 10px;
 }
 
 .tab {
-  background-color: #FFF;
+  background-color: #fff;
   width: 351.45px;
   padding: 10px 20px;
-  color: #19191B;
+  color: #19191b;
   border: none;
   cursor: pointer;
   border-radius: 20px;
   font-size: 22px;
+  transition: all 0.3s ease;
 }
 
-.tab.active {
+.tab--active {
   width: 351.45px;
   height: 80px;
-  background-color: #D7D7D7;
-  color: #19191B;
+  background-color: #d7d7d7;
+  color: #19191b;
   font-size: 22px;
 }
 
@@ -152,20 +180,50 @@ header > img {
   margin: 20px auto;
 }
 
-.project {
+.portfolio__project {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: calc(50% - 20px);
   border-radius: 10px;
   padding: 10px;
+  animation: fadeInScaleUp 1s ease-out;
 }
 
-.project img {
+@keyframes fadeInScaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.portfolio__project-img {
   border-radius: 10px;
   width: 362px;
 }
 
-footer {
+.portfolio__project-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio__button-container {
+  display: none;
+}
+
+.portfolio__scroll-button {
+  display: none;
+}
+
+.footer {
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 80px;
