@@ -17,7 +17,7 @@ header {
   padding: 20px;
 }
 
-header > img {
+.header__toggle-button {
   width: 80px;
   cursor: pointer;
 }
@@ -31,19 +31,19 @@ header > img {
   gap: 40px;
 }
 
-.profile-picture {
+.profile__picture {
   border-radius: 50%;
   border: 5px solid #fff;
   width: 192px;
   height: 192px;
 }
 
-.profile-info h1 {
+.profile-info__name {
   margin: 10px 0;
   font-size: 46px;
 }
 
-.job-title {
+.profile-info__job-title {
   font-size: 22px;
   color: gray;
   position: relative;
@@ -51,12 +51,12 @@ header > img {
   margin-bottom: 10px;
 }
 
-.social-icons {
+.profile-info__social-icons {
   display: flex;
   gap: 26px;
 }
 
-.social-icons img {
+.profile-info__social-icons__icon {
   width: 36px;
   height: 36px;
 }
@@ -70,12 +70,12 @@ header > img {
   font-size: 24px;
 }
 
-.achievement h2 {
+.achievement__title {
   font-size: 22px;
   color: #3a3a3a;
 }
 
-.achievement p {
+.achievement__description {
   color: #575757;
   font-size: 22px;
 }
@@ -89,7 +89,7 @@ header > img {
   gap: 38px;
 }
 
-.actions a {
+.actions__button {
   text-decoration: none;
   width: 290px;
   font-size: 22px;
@@ -100,16 +100,16 @@ header > img {
   align-items: center;
 }
 
-.download-cv {
+.actions__button-download-cv {
   background-color: #fbd144;
   color: #333;
 }
 
-.download-cv > img {
+.actions__button-download-cv-icon {
   margin-left: 10px;
 }
 
-.contact-me {
+.actions__button-contact-me {
   background-color: #ffffff;
   color: #333;
 }
@@ -125,7 +125,7 @@ header > img {
   border-radius: 10px;
 }
 
-.tab {
+.tabs__tab {
   background-color: #FFF;
   width: 351.45px;
   padding: 10px 20px;
@@ -136,7 +136,7 @@ header > img {
   font-size: 22px;
 }
 
-.tab.active {
+.tabs__tab--active {
   width: 351.45px;
   height: 80px;
   background-color: #D7D7D7;
@@ -152,7 +152,7 @@ header > img {
   margin: 20px auto;
 }
 
-.project {
+.portfolio__project {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: calc(50% - 20px);
@@ -160,7 +160,7 @@ header > img {
   padding: 10px;
 }
 
-.project img {
+.portfolio__project-img {
   border-radius: 10px;
   width: 362px;
 }

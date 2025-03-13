@@ -13,19 +13,22 @@
 
 <body>
   <header>
-    <img src="./assets/icons/toggle-light-button.png" alt="Button to toggle light and dark mode">
+    <img src="./assets/icons/toggle-light-button.png" class="header__toggle-button"
+      alt="Button to toggle light and dark mode">
     <div class="profile">
-      <img src="./assets/images/victor-photo.png" alt="Profile Picture" class="profile-picture">
+      <img src="./assets/images/victor-photo.png" alt="Profile Picture" class="profile__picture">
       <div class="profile-info">
-        <h1>Victor Alvarado</h1>
-        <p class="job-title">Software Engineer</p>
-        <nav class="social-icons">
-          <a href="https://github.com/vito8916" target="_blank"><img src="./assets/icons/github.png" alt="GitHub"></a>
-          <a href="https://x.com/Ar7ois" target="_blank"><img src="./assets/icons/twitter-logo.png" alt="Twitter"></a>
-          <a href="https://www.linkedin.com/in/victorokada/" target="_blank"><img src="./assets/icons/linkedin-logo.png"
-              alt="LinkedIn"></a>
-          <a href="https://www.youtube.com/watch?v=sI7pwwUbyAw" target="_blank"><img src="./assets/icons/youtube.png"
-              alt="Youtube"></a>
+        <h1 class="profile-info__name">Victor Alvarado</h1>
+        <p class="profile-info__job-title">Software Engineer</p>
+        <nav class="profile-info__social-icons">
+          <a href="https://github.com/vito8916" target="_blank">
+            <img src="./assets/icons/github.png" class="profile-info__social-icons__icon" alt="GitHub"></a>
+          <a href="https://x.com/Ar7ois" target="_blank">
+            <img src="./assets/icons/twitter-logo.png" class="profile-info__social-icons__icon" alt="Twitter"></a>
+          <a href="https://www.linkedin.com/in/victorokada/" target="_blank">
+            <img src="./assets/icons/linkedin-logo.png" class="profile-info__social-icons__icon" alt="LinkedIn"></a>
+          <a href="https://www.youtube.com/watch?v=sI7pwwUbyAw" target="_blank">
+            <img src="./assets/icons/youtube.png" class="profile-info__social-icons__icon" alt="Youtube"></a>
         </nav>
       </div>
     </div>
@@ -33,48 +36,50 @@
 
   <main class="achievements">
     <div class="achievement">
-      <h2>7</h2>
-      <p>Years of work experience</p>
+      <h2 class="achievement__title">7</h2>
+      <p class="achievement__description">Years of work experience</p>
     </div>
     <div class="achievement">
-      <h2>50+</h2>
-      <p>Completed projects</p>
+      <h2 class="achievement__title">50+</h2>
+      <p class="achievement__description">Completed projects</p>
     </div>
     <div class="achievement">
-      <h2>20+</h2>
-      <p>Satisfied customers</p>
+      <h2 class="achievement__title">20+</h2>
+      <p class="achievement__description">Satisfied customers</p>
     </div>
   </main>
 
   <div class="actions">
-    <a class="download-cv" href="./assets/docs/cv-victor-alvarado.pdf" download>Download CV <img
-        src="./assets/icons/downArrow.svg" alt="Down Arrow Icon"></a>
-    <a class="contact-me" href="https://wa.me/5579996444681?text=Hi,Victor!" target="_blank">Contact Me</a>
+    <a class="actions__button actions__button-download-cv" href="./assets/docs/cv-victor-alvarado.pdf" download>Download
+      CV
+      <img src="./assets/icons/downArrow.svg" class="actions__button-download-cv-icon" alt="Down Arrow Icon"></a>
+    <a class="actions__button actions__button-contact-me" href="https://wa.me/5579996444681?text=Hi,Victor!"
+      target="_blank">Contact Me</a>
   </div>
 
   <div class="tabs">
-    <button class="tab active">Portfolio</button>
-    <button class="tab">Skills</button>
+    <button class="tabs__tab tabs__tab-active">Portfolio</button>
+    <button class="tabs__tab">Skills</button>
   </div>
 
   <div class="portfolio">
-    <div class="project">
-      <img src="./assets/images/01-investments.png" alt="Investments-Project">
+    <div class="portfolio__project">
+      <img src="./assets/images/01-investments.png" class="portfolio__project-img" alt="Investments-Project">
     </div>
-    <div class="project">
-      <img src="./assets/images/02-sam.png" alt="Sam's-Project">
+    <div class="portfolio__project">
+      <img src="./assets/images/02-sam.png" class="portfolio__project-img" alt="Sam's-Project">
     </div>
-    <div class="project">
-      <img src="./assets/images/03-frames.png" alt="Arts-Project">
+    <div class="portfolio__project">
+      <img src="./assets/images/03-frames.png" class="portfolio__project-img" alt="Arts-Project">
     </div>
-    <div class="project">
-      <img src="./assets/images/04-friday-dinner.png" alt="Dinner-Project">
+    <div class="portfolio__project">
+      <img src="./assets/images/04-friday-dinner.png" class="portfolio__project-img" alt="Dinner-Project">
     </div>
-    <div class="project">
-      <img src="./assets/images/05-phone.png" alt="Phone-Project">
+    <div class="portfolio__project">
+      <img src="./assets/images/05-phone.png" class="portfolio__project-img" alt="Phone-Project">
     </div>
-    <div class="project">
-      <img src="./assets/images/06-food.png" alt="Food-Project">
+    <div class="portfolio__project">
+      <img src="./assets/images/06-food.png" class="portfolio__project-img" alt="Food-Project">
     </div>
   </div>
   <footer>
