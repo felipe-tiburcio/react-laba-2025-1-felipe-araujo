@@ -1,8 +1,4 @@
-const buttonContainer = document.querySelector(".header__toggle-button-div");
-const brightButton = document.querySelector("#header__toggle-button-bright");
-const darkButton = document.querySelector("#header__toggle-button-dark");
-const brightTheme = document.querySelector("#bright-mode");
-const darkTheme = document.querySelector("#dark-mode");
+const toggleButton = document.querySelector("#header__toggle-button-bright");
 
 const brightSVG = `
         <svg id="header__toggle-button-bright" class="header__toggle-button" width="80" height="80" viewBox="0 0 80 80"
@@ -26,20 +22,8 @@ const darkSVG = `
           fill="#A3ABB2" />
       </svg>`;
 
-let isBrightMode = true;
+toggleButton.addEventListener("click", () => {
+  const isDarkMode = document.body.classList.toggle("dark-mode");
 
-buttonContainer.innerHTML = brightSVG;
-
-buttonContainer.addEventListener("click", () => {
-  if (isBrightMode) {
-    brightTheme.disabled = true;
-    darkTheme.disabled = false;
-    buttonContainer.innerHTML = darkSVG;
-  } else {
-    darkTheme.disabled = true;
-    brightTheme.disabled = false;
-    buttonContainer.innerHTML = brightSVG;
-  }
-
-  isBrightMode = !isBrightMode;
+  toggleButton.innerHTML = isDarkMode ? darkSVG : brightSVG;
 });

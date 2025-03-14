@@ -12,6 +12,14 @@ body {
   transition: background-color 0.3s ease;
 }
 
+body.dark-mode {
+  font-family: "Poppins", sans-serif;
+  background-color: #0c151d;
+  color: #a3abb2;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+
 .header {
   padding: 20px;
 }
@@ -29,6 +37,12 @@ body {
 }
 
 .header__toggle-button-path {
+  transition: fill 0.5s ease, stroke 0.5s ease;
+}
+
+body.dark-mode .header__toggle-button-path {
+  fill: #171f26;
+  stroke: #a3abb2;
   transition: fill 0.5s ease, stroke 0.5s ease;
 }
 
@@ -52,9 +66,23 @@ body {
   font-size: 46px;
 }
 
+body.dark-mode .profile__info-title {
+  margin: 10px 0;
+  font-size: 46px;
+  color: #f1f2f4;
+}
+
 .profile__job-title {
   font-size: 22px;
   color: #575757;
+  position: relative;
+  left: -78px;
+  margin-bottom: 10px;
+}
+
+body.dark-mode .profile__job-title {
+  font-size: 22px;
+  color: #a3abb2;
   position: relative;
   left: -78px;
   margin-bottom: 10px;
@@ -71,6 +99,16 @@ body {
   height: 36px;
   opacity: 0.5;
   transition: all 0.3s ease;
+}
+
+body.dark-mode .social-icons__svg-path {
+  pointer-events: bounding-box;
+  width: 36px;
+  height: 36px;
+  fill: #a3abb2;
+  opacity: 0.8;
+  pointer-events: bounding-box;
+  transition: all 0.3 ease;
 }
 
 .social-icons__svg-path:hover {
@@ -92,9 +130,19 @@ body {
   color: #3a3a3a;
 }
 
+body.dark-mode .achievement__title {
+  font-size: 22px;
+  color: #a3abb2;
+}
+
 .achievement__description {
   color: #575757;
   font-size: 22px;
+}
+
+body.dark-mode .achievement__description {
+  font-size: 22px;
+  color: #a3abb2;
 }
 
 .actions {
@@ -123,12 +171,28 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
+body.dark-mode .actions__link-download {
+  background-color: #fbd144;
+  color: #333;
+  transition: opacity 0.3s ease;
+  opacity: 0.9;
+}
+
 .actions__link-download:hover {
   box-shadow: 2px 2px 5px gray;
 }
 
+body.dark-mode .actions__link-download:hover {
+  opacity: 1;
+}
+
 .actions__link-download-icon {
   margin-left: 10px;
+}
+
+body.dark-mode .actions__link-download-icon {
+  margin-left: 10px;
+  color: #3d3d3d;
 }
 
 .actions__link-contact {
@@ -137,8 +201,18 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
+body.dark-mode .actions__link-contact {
+  background-color: #ffffff;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
 .actions__link-contact:hover {
   box-shadow: 2px 2px 5px gray;
+}
+
+body.dark-mode .actions__link-contact:hover {
+  opacity: 1;
 }
 
 .tabs {
@@ -148,6 +222,17 @@ body {
   gap: 10px;
   margin: 20px auto;
   background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+body.dark-mode .tabs {
+  width: 756px;
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  margin: 20px auto;
+  background-color: #171f26;
   padding: 10px;
   border-radius: 10px;
 }
@@ -164,6 +249,18 @@ body {
   transition: all 0.3s ease;
 }
 
+body.dark-mode .tab {
+  width: 351.45px;
+  padding: 10px 20px;
+  border: none;
+  background: #171f26;
+  color: #a3abb2;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
 .tab--active {
   width: 351.45px;
   height: 80px;
@@ -172,9 +269,23 @@ body {
   font-size: 22px;
 }
 
+body.dark-mode .tab--active {
+  height: 80px;
+  background: #0c151d;
+  color: #a3abb2;
+  font-size: 22px;
+}
+
 .portfolio {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 20px auto;
+}
+
+body.dark-mode .portfolio {
+  display: flex;
   flex-wrap: wrap;
   width: 60%;
   margin: 20px auto;

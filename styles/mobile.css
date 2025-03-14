@@ -1,16 +1,10 @@
 @media (max-width: 600px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   body {
     min-width: 320px;
   }
 
   .header {
-    padding: 0;
+    padding: 0px;
   }
 
   .header__toggle-button-div {
@@ -39,12 +33,12 @@
   }
 
   .profile__info-title {
-    font-size: 32px;
+    font-size: 32px !important;
   }
 
   .profile__job-title {
-    font-size: 14px;
-    position: static;
+    font-size: 14px !important;
+    position: static !important;
   }
 
   .social-icons {
@@ -56,19 +50,18 @@
   .achievements {
     margin-top: 0;
     padding: 0;
-    width: 100%;
+    width: 100% !important;
     height: 106px;
     align-items: center;
     justify-content: center;
-    gap: 30px;
   }
 
   .achievement__title {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   
   .achievement__description {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 
   .actions {
@@ -91,15 +84,15 @@
   }
 
   .tabs {
-    width: 100%;
-    gap: 10px;
+    width: 100% !important;
+    gap: 10px !important;
     width: 330px;
   }
 
   .tab {
-    width: 154px;
-    height: 50.3px;
-    font-size: 14px;
+    width: 154px !important;
+    height: 50.3px !important;
+    font-size: 14px !important;
   }
 
   .portfolio {
@@ -146,11 +139,11 @@
 
 @media (max-width: 768px) {
   .portfolio {
-    width: 100%; 
+    width: 100%;
   }
 
-  .portfolio__project {
-    flex-basis: auto;
+  body.dark-mode .portfolio {
+    width: 100%;
   }
 
   .portfolio__project-img {
