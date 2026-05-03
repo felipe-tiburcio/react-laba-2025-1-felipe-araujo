@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e9ebec;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 20px;
+}
+
+.header__toggle-button {
+  width: 80px;
+  cursor: pointer;
+}
+
+.profile {
+  width: 631px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.profile__picture {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  width: 192px;
+  height: 192px;
+}
+
+.profile-info__name {
+  margin: 10px 0;
+  font-size: 46px;
+}
+
+.profile-info__job-title {
+  font-size: 22px;
+  color: gray;
+  position: relative;
+  left: -65px;
+  margin-bottom: 10px;
+}
+
+.profile-info__social-icons {
+  display: flex;
+  gap: 26px;
+}
+
+.profile-info__social-icons__icon {
+  width: 36px;
+  height: 36px;
+}
+
+.achievements {
+  width: 634px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 20px auto;
+  font-size: 24px;
+}
+
+.achievement__title {
+  font-size: 22px;
+  color: #3a3a3a;
+}
+
+.achievement__description {
+  color: #575757;
+  font-size: 22px;
+}
+
+.actions {
+  margin: 0 auto;
+  width: 618px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  gap: 38px;
+}
+
+.actions__button {
+  text-decoration: none;
+  width: 290px;
+  font-size: 22px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions__button-download-cv {
+  background-color: #fbd144;
+  color: #333;
+}
+
+.actions__button-download-cv-icon {
+  margin-left: 10px;
+}
+
+.actions__button-contact-me {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.tabs {
+  width: 760px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+  background-color: #FFF;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.tabs__tab {
+  background-color: #FFF;
+  width: 351.45px;
+  padding: 10px 20px;
+  color: #19191B;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 22px;
+}
+
+.tabs__tab--active {
+  width: 351.45px;
+  height: 80px;
+  background-color: #D7D7D7;
+  color: #19191B;
+  font-size: 22px;
+}
+
+.portfolio {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.portfolio__project {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: calc(50% - 20px);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.portfolio__project-img {
+  border-radius: 10px;
+  width: 362px;
+}
+
+footer {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  font-size: 22px;
+}
