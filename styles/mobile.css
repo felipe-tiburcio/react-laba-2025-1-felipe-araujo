@@ -1,0 +1,152 @@
+@media (max-width: 600px) {
+  body {
+    min-width: 320px;
+  }
+
+  .header {
+    padding: 0px;
+  }
+
+  .header__toggle-button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    margin: 30px;
+  }
+
+  .header__toggle-button {
+    width: 48px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .profile {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .profile__picture {
+    width: 124px;
+    height: 124px;
+  }
+
+  .profile__info-title {
+    font-size: 32px !important;
+  }
+
+  .profile__job-title {
+    font-size: 14px !important;
+    position: static !important;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .achievements {
+    margin-top: 0;
+    padding: 0;
+    width: 100% !important;
+    height: 106px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .achievement__title {
+    font-size: 16px !important;
+  }
+  
+  .achievement__description {
+    font-size: 14px !important;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .actions__link {
+    width: 158px;
+    height: 44px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+
+  .actions__link-download-icon {
+    width: 16px;
+    height: 14px;
+  }
+
+  .tabs {
+    width: 100% !important;
+    gap: 10px !important;
+    width: 330px;
+  }
+
+  .tab {
+    width: 154px !important;
+    height: 50.3px !important;
+    font-size: 14px !important;
+  }
+
+  .portfolio {
+    width: 100%; 
+  }
+
+  .portfolio__project {
+    flex-basis: 100%; 
+  }
+
+  .portfolio__project-img {
+    width: 340px;
+  }
+
+  .portfolio__button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .portfolio__scroll-button {
+    text-decoration: none;
+    font-size: 12px;
+    width: 158px;
+    height: 44px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbd144;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .portfolio__scroll-button:hover {
+    box-shadow: 2px 2px 5px gray;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    width: 100%;
+  }
+
+  body.dark-mode .portfolio {
+    width: 100%;
+  }
+
+  .portfolio__project-img {
+    width: 340px;
+  }
+}
